@@ -24,7 +24,7 @@ body{
 }
 
 
-.aulamagna_hotspot img{
+.hotspot img{
     visibility: hidden;
     position: absolute;
     border-radius: 3px;
@@ -35,11 +35,11 @@ body{
     margin-left: -220px;
     cursor: default;
 }
-.aulamagna_hotspot:hover img{
+.hotspot:hover img{
     visibility: visible;
 }
 
-.aulamagna_hotspot span {
+.hotspot span {
     visibility: hidden;
     position: absolute;
     border-radius: 3px;
@@ -52,11 +52,11 @@ body{
     cursor: crosshair;
 }
 
-.aulamagna_hotspot:hover span{
+.hotspot:hover span{
     visibility: visible;
 }
 
-.aulamagna_hotspot:hover span:after {
+.hotspot:hover span:after {
     content: '';
     position: absolute;
     width: 0;
@@ -120,14 +120,6 @@ body{
 
 
 
-
-.aulamagna_info{
-
-}
-
-.aulamagna_galley{
-
-}
 
 .aulamagna_gallery_icon{
     width:40px;
