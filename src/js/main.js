@@ -1,8 +1,7 @@
 var scenes = {};
 
 var scenes_ext = [
-    torriani,
-    torriani2
+
 ];
 var key_in_scenes
 for (var key in scenes_ext){
@@ -16,13 +15,6 @@ for (var key in scenes_ext){
 console.log(scenes);
  
  viewer = pannellum.viewer('panorama', {   
-        "default": {
-            "firstScene": "aulamagna",
-            "autoLoad": true,   
-            "author": "Fabbrica Digitale",
-            "compass": true,
-            "northOffset": 243,
-            "sceneFadeDuration": 1000
-        },
+        "default":default,
         "scenes":scenes
 })
