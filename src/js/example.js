@@ -7,7 +7,9 @@
 //  creare gli hotspot normalmente utilizzando, all'interno della definizione delle scene, la sintassi standard.
 
 var exampleHS = [
-    
+    {
+        
+    }
 ]
 
 //SCENES:
@@ -30,13 +32,13 @@ var exampleHS = [
 //  }
 
 var example = {   //sostituire "scenes" con il nome del file.
-    "scena1_example":{
-        "title": "cancello",
+    "example_scene":{
+        "title": "example_title",
         "hfov": 110,
         "pitch": -3,
         "yaw": 117,
         "type": "equirectangular",
-        "panorama": "./img/example.JPG",
+        "panorama": "./img/example.png",
         "hotSpots": exampleHS
     }
 };
