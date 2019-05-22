@@ -1,0 +1,72 @@
+﻿html{
+    height: 100%;
+}
+body{
+    /*height: 400px;
+    width: 600px;*/
+    height: 100%;
+}
+
+.hotspot {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;    
+    border: 2px solid #ED553D; 
+}
+
+
+/*.hotspot1 {
+    height: 500px;
+    width: 500px;
+    /*border-radius: 50px;    
+    border: 5px solid yellow; 
+    background:url('../img/info_point.png');
+    cursor:help;
+}*/
+
+
+.tooltip img{
+    visibility: hidden;
+    position: absolute;
+    border-radius: 3px;
+    color: #000;
+    text-align: center;
+    max-width: 200px;
+    padding: 5px 10px;
+    margin-left: -220px;
+    cursor: default;
+}
+.tooltip:hover img{
+    visibility: visible;
+}
+
+.tooltip span {
+    visibility: hidden;
+    position: absolute;
+    border-radius: 3px;
+    background-color: limegreen;
+    color: #000;
+    text-align: center;
+    max-width: 200px;
+    padding: 5px 10px;
+    margin-left: -220px;
+    cursor: crosshair;
+}
+
+.tooltip:hover span{
+    visibility: visible;
+}
+
+.tooltip:hover span:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: limegreen transparent transparent transparent;
+    bottom: -20px;
+    left: -10px;
+    margin: 0 50%;
+    cursor:help;
+}   
