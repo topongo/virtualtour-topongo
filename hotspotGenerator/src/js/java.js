@@ -39,6 +39,9 @@ function attributes(elem, attr) {
   }
 }
 
+
+
+
 function appendText(elem, tx, br) {
   elem.appendChild(document.createTextNode(tx));
   if (br) {
