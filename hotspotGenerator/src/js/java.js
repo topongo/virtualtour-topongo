@@ -1,3 +1,6 @@
+
+alert(document.getElementById("sas"));
+
 function generate() {
   var num = document.getElementById('num').value;
   create(num);
@@ -19,7 +22,7 @@ function create(num) {
     attributes(pitch, {"placeholder":"pitch", "class":"pitch"});
     attributes(yaw, {"placeholder":"yaw", "class":"yaw"});
     attributes(type, {"placeholder":"type", "class":"type"});
-    attributes(cssClass, {"placeholder":"cssClass", "class":"cssClass", "value":"hotspot"});
+    attributes(cssClass, {"placeholder":"cssClass", "class":"cssClass"});
     attributes(text, {"placeholder":"text", "class":"text"});
     attributes(sceneId, {"placeholder":"sceneId", "class":"sceneId"});
     attributes(targetYaw, {"placeholder":"targetYaw", "class":"targetYaw"});
@@ -45,6 +48,10 @@ function appendText(elem, tx, br) {
 
 function done() {
   var title = document.getElementById("title").value;
+  if(document.getElementById('end') != null){
+    var end = document.getElementById('end');
+    end.parentNode.removeChild(end);
+  }
   if (!!title) {
     var endDiv = document.createElement("div");
     var pitch_ = document.getElementsByClassName("pitch");

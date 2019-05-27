@@ -19,7 +19,7 @@ var scenes_ext = [
 
 
 //          NON MODIFICARE QUESTA SEZIONE
-//===================================================
+//====================================================
 var scenes = {};
 
 var key_in_scenes
@@ -39,6 +39,11 @@ console.log(scenes);
 
 
 
+
+
+
+//Funzione per la creazione del mirino (non indispensabile)
+//====================================================
 var pointer_div = document.createElement('div');
 document.getElementById("panorama").appendChild(pointer_div);
 pointer_div.id = "pointer";
@@ -52,7 +57,15 @@ Object.assign(pointer_div.style, {
     top: (document.getElementById("panorama").offsetHeight/2+5) + "px",
     left: (document.getElementById("panorama").offsetWidth/2-5) + "px"
 });
+//====================================================
 
+
+
+
+
+
+//  Ritorno dei valori di pitch e yaw nella console
+//====================================================
 viewer.on('mousedown', function(event) {
     // For pitch and yaw of center of viewer
     console.log("Pitch: ", viewer.getPitch());
@@ -65,3 +78,11 @@ viewer.on('mousedown', function(event) {
     pointer.left = (document.getElementById("panorama").offsetWidth/2-5) + "px"
     console.log((document.getElementById("panorama").offsetWidth/2-5) + "px")
 });
+//====================================================
+
+
+
+
+
+
+//da qua in poi creare le funzioni che si vogliono utilizzare per il testing

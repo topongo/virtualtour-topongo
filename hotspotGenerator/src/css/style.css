@@ -38,9 +38,6 @@ input[type="number"] {
   transition: all 20s ease-in-out;
 }
 
-input[type="number"]:hover {
-  transform: translateX(2000px);
-}
 
 button {
   background-color: yellow;
