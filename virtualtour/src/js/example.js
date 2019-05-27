@@ -8,7 +8,10 @@
 
 var exampleHS = [
     {
-        
+        "pitch":9,
+        "yaw":-4,
+        "type":"info",
+        "text":"Colosseo"
     }
 ]
 

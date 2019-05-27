@@ -1,0 +1,69 @@
+body {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+@keyframes rotation {
+  to {transform: rotate(360deg);}
+}
+
+
+input {
+  width: 170px;
+  height: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: grey;
+}
+
+input::placeholder, input[value] {
+  text-align: center;
+}
+
+input[type="text"] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+input[type="text"]:focus {
+  animation-name: rotation;
+  animation-duration: 0.5s;
+}
+
+input[type="number"] {
+  width: 40px;
+  margin-left: 10px;
+  transition: all 20s ease-in-out;
+}
+
+input[type="number"]:hover {
+  transform: translateX(2000px);
+}
+
+button {
+  background-color: yellow;
+  font-weight: bolder;
+  border-radius: 10px;
+  border-style: ridge;
+  border-color: orange;
+}
+
+div {
+  border: 2px;
+  background-color: lightblue;
+  margin-left: 35%;
+  margin-right: 35%;
+  line-height: 50px;
+}
+
+.tx {
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 30s ease-in-out;
+}
+
+.tx:hover {
+  font-size: 100px;
+}
